@@ -9,7 +9,7 @@
 	clear:both;
 }
 
-@media screen and (max-width:1024px){
+@media screen and (min-width:769px){
 
 main{
 	width:960px;
@@ -17,6 +17,7 @@ main{
 }
 .box{
 	float:left;
+	width:280px;
 
 }
 .box:nth-child(1){
@@ -27,20 +28,31 @@ main{
 	margin:0 30px;
 }
 
+.box-content{
+	height:150px;
+	background-size:cover;
+	background-position:bottom;
+	margin:10px;
+}
+
 }
 
 @media screen and (max-width:768px){
 
 .box{
-	margin:20px 30px;
+	margin:20px auto;
+	width:90%;
 }
-main{
-	width:280px;
-
 }
 
+.box-content{
+	height:150px;
+	background-size:cover;
+	background-position:50% 50%;
+	margin:10px;
 }
 
+}
 
 
 main{
@@ -50,17 +62,11 @@ main{
 
 .box{
 	position:relative;
-	width:280px;
 	border:1px solid gray;
 }
 
 
-.box-content{
-	height:150px;
-	background-size:cover;
-	background-position:bottom;
-	margin-bottom: 10px
-}
+
 
 .first{
 	background-image: url(img/flow01.png)
